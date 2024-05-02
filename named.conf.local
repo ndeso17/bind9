@@ -1,0 +1,8 @@
+zone "serverlokal.stb" {
+        type master;
+        file "/etc/bind/rcZone/db.serverlokal.stb";
+};
+zone "11.16.172.in-addr.arpa" {
+        type master;
+        file "/etc/bind/rcPTR/ptr_172.16.11.100";
+};
