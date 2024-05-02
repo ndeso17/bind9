@@ -1,0 +1,19 @@
+$TTL 604800
+@       IN      SOA     serverlokal.stb.        admin.serverlokal.stb.(
+                        2024050101      ;serial
+                        604800          ;refresh
+                        86400           ;retry
+                        31536000        ;expire
+                        604800)         ;negative cache TTL
+;nameserver ns1
+@       IN      NS      ns1.serverlokal.stb.
+ns1     IN      A       172.16.11.100
+
+;domain
+@       IN      A       172.16.11.100
+
+;cname
+www     IN      CNAME   @
+
+;subdomain
+sub1    IN      A       172.16.11.100
